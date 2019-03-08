@@ -122,13 +122,6 @@ void* vow (void*)
             printf ("vow: %s\n", word.c_str()); // if 1st character is a vowel
             ii++;
         }
-        else if (isValidWord && !startWithVowel)
-            sched_yield(); // if not, yield to the other thread 
-        else // not a valid world
-        {
-            fprintf (stderr, "* %s: Not a world!\n", word.c_str());
-            ii++; // increase iterator to skip the invalid world, prevent deadlock
-        }
     }
     pthread_exit(NULL);
 }
