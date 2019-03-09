@@ -29,7 +29,7 @@ using namespace std;
  *
  * ***********************************************/
 /* Global variables*/
-int size; // hold the number of words in sentence
+int size = 0; // hold the number of words in sentence
 int ii = 0; // iterator
 string* toks = nullptr; // string array hold flag's contains, to pass to vow and con functions
 string vowels = "AEUIOaeuio";
@@ -117,7 +117,14 @@ void* vow (void*)
         word = toks[ii]; // convert toks[ii] to string
         isValidWord = isalpha(word[0]);
         startWithVowel = vowels.find(word[0])!=string::npos;
-        if (isValidWord && startWithVowel) // limit within alphabet character
+        if (!isValidWord) // limit within alphabet character
+        {
+            fprintf (stderr, "* %s: Not a world!\n", word.c_str());
+            ii++; // increase iterator to skip the invalid world, prevent deadlock
+        }
+        //else if (isValidWord && !startWithVowel);
+            //sched_yield(); // if not, yield to the other thread 
+        if (startWithVowel)// not a valid world
         {
             printf ("vow: %s\n", word.c_str()); // if 1st character is a vowel
             ii++;
@@ -168,8 +175,8 @@ void* con (void*)
             printf ("con: %s\n", word.c_str()); // print out if starts with consonant
             ii++;
         }
-        else // not start with consonant
-            sched_yield();
+        //else // not start with consonant
+            //sched_yield();
         /* we don't need to a branch for not a valid word, because the vow() function would increase 
         the iterator ii by one already. If we have it here, they would be redundancy and skip a word
         sometimes */
