@@ -134,6 +134,34 @@ int main(int argc, char * argv[]) {
 }
 
 
+//********************************************************************
+//
+// inSafeState Function
+//
+// Check if system in safe state
+//
+// Return Value
+// ------------
+// bool
+//
+// Value Parameters
+// ----------------
+// row      int     the number of processes
+//
+// Reference Parameters
+// --------------------
+// need             Matrix  reference to need Matrix
+// allocation       Matrix  reference to allocation Matrix
+// available        Matrix  reference to available Matrix
+//
+// Local Variables
+// ---------------
+// work		    Matrix		    work matrix initialize to available 
+// finished     bool[]          hold finish status of processes
+// last         int             number of finished processes since last update
+// current      int             number of finished processes at the moment
+//
+//*******************************************************************
 bool inSafeState(Matrix& need, Matrix& allocation, Matrix& available, int row)
 {
     // Initialize variables
@@ -158,6 +186,9 @@ bool inSafeState(Matrix& need, Matrix& allocation, Matrix& available, int row)
             }
         }
     }
-    return !current;
+    if (current == 0)
+        return true;
+    else
+        return false;
 }
 

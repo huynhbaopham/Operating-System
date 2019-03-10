@@ -36,6 +36,30 @@ To run:
 $ ./fibonacci 10
 ```
 ## Banker
+The banker algorithm is implemented using 2 different languages python and cpp. 
+
+Include 2 files:
+1. banker.cpp
+2. Matrix.h
+3. Makefile
+4. banker.py
+
+banker.cpp:
+_To compile: 
+```terminal
+$ make
+```
+
+_To run: 
+```terminal
+$ ./banker infile.txt
+```
+
+bankerpy.py: run on python 3
+_To run: 
+```terminal
+$ python3 bankerpy.py infile.txt
+```
 
 # Note
 Please use them as a reference only.
