@@ -33,7 +33,7 @@ $ make
 
 To run:
 ```terminal
-    $ ./fibonacci 10
+$ ./fibonacci 10
 ```
 ## Banker
 
