@@ -16,6 +16,7 @@ $ make
 ```
 
 To run:
+   
     $ ./vc Your Sentence containing any words you want!
 
 
