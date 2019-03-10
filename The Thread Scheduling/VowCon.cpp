@@ -2,7 +2,7 @@
 //
 // Bao Pham
 // Operating Systems
-// Programming Project #2: Printing Words With sched_yield()
+// Programming Project #2: Printing Words With Vow & Con
 // Spring 2018 
 // Instructor: Dr. Dulal C. Kar
 //
