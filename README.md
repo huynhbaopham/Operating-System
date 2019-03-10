@@ -6,15 +6,15 @@ This contains all of the project I have done during the OS class. Some of them w
 ## Thread Scheduling
 Thread scheduling to share the resources for printing words starting with vowels & consonants.
 
-Include:
-> VowCon.cpp
-> Makefile
+Include 2 files:
+1. VowCon.cpp
+2. Makefile
 
 Use Makefile to compile:
-> make
+> `$ make`
 
 To run:
-> ./vc Your Sentence containing any words you want!
+> `$ ./vc Your Sentence containing any words you want!`
 
 
 ## Banker
