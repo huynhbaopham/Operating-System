@@ -11,10 +11,12 @@ Include 2 files:
 2. Makefile
 
 Use Makefile to compile:
-> `$ make`
+```terminal
+$ make
+```
 
 To run:
-> `$ ./vc Your Sentence containing any words you want!`
+`<$ ./vc Your Sentence containing any words you want!>`
 
 
 ## Banker
