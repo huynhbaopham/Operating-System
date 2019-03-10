@@ -45,18 +45,20 @@ Include 2 files:
 4. banker.py
 
 banker.cpp:
-_To compile: 
+
+To compile: 
 ```terminal
 $ make
 ```
 
-_To run: 
+To run: 
 ```terminal
 $ ./banker infile.txt
 ```
 
 bankerpy.py: run on python 3
-_To run: 
+
+To run: 
 ```terminal
 $ python3 bankerpy.py infile.txt
 ```
