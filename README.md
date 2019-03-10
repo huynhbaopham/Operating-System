@@ -19,8 +19,24 @@ To run:
 ```terminal
     $ ./vc Your sentence containing any words you want!
 ```
+## Fibonacci
+Parent thread waiting for child thread to finish generating Fibinacci sequence before printing it out.
 
+Include 2 files:
+1. Fibonacci.cpp
+2. Makefile
+
+Use Makefile to compile:
+```terminal
+$ make
+```
+
+To run:
+```terminal
+    $ ./fibonacci 10
+```
 ## Banker
+
 # Note
 Please use them as a reference only.
 ### end

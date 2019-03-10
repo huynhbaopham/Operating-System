@@ -1,16 +1,16 @@
 ###########################################################
 #
 # Simple Makefile for Operating Systems Project 2
-# Thread Scheduling
+# Fibonacci generator
 #
 ###########################################################
 .SUFFIXES: .cpp
 
-vc: VowCon.cpp
-	g++ VowCon.cpp -o vc -lpthread -std=c++11
+fibonacci: Fibonacci.cpp
+	g++ Fibonacci.cpp -o fibonacci -lpthread -std=c++11
 
 clean:
-	/bin/rm -f *.o *~ core vc
+	/bin/rm -f *.o *~ core fibonacci
 
 
 
