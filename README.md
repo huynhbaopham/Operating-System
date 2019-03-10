@@ -33,18 +33,35 @@ $ make
 
 To run:
 ```terminal
-$ ./fibonacci 10
+$ ./ProCon a1 a2 a3 a4 a5 b
 ```
+where:
+* a1 is the time main thread sleep
+* a2 is the time producer sleep
+* a3 is the time consumer sleep
+* a4 is the producer number of threads
+* a5 is the consumer number of threads
+* b is Yes or No to request print statistics when program ends
+
+## Producer-Consumer
+Using semaphore for solving Producer - Consumer problem.
+
+Include 4 files:
+1. buffer.cpp
+2. buffer.h
+3. ProCon.cpp
+4. Makefile
+
 ## Banker
 The banker algorithm is implemented using 2 different languages python and cpp. 
 
-Include 2 files:
+Include 4 files:
 1. banker.cpp
 2. Matrix.h
 3. Makefile
 4. banker.py
 
-banker.cpp:
+**banker.cpp**:
 
 To compile: 
 ```terminal
@@ -56,7 +73,7 @@ To run:
 $ ./banker infile.txt
 ```
 
-bankerpy.py: run on python 3
+**bankerpy.py**: run on python 3
 
 To run: 
 ```terminal
