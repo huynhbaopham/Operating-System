@@ -1,10 +1,10 @@
 # Operating System
 # Bao Pham
 This contains all of the project I have done during the Operating System.
-# Includes
+# Projects
 ## Shell
 ## Thread Scheduling
-Two threads share the resources for printing words starting with vowels & consonants in order of user's input.
+Two threads share the resources for printing words starting with vowels & consonants in order of user input.
 
 Include 2 files:
 1. VowCon.cpp
@@ -16,9 +16,9 @@ $ make
 ```
 
 To run:
-
-    $ ./vc Your Sentence containing any words you want!
-
+```terminal
+    $ ./vc Your sentence containing any words you want!
+```
 
 ## Banker
 # Note
