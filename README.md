@@ -17,7 +17,7 @@ $ make
 
 To run:
 ```terminal
-    $ ./vc Your sentence containing any words you want!
+$ ./vc Your sentence containing any words you want!
 ```
 ## Fibonacci
 Parent thread waiting for child thread to finish generating Fibinacci sequence before printing it out.
