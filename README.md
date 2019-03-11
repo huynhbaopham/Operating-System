@@ -33,15 +33,9 @@ $ make
 
 To run:
 ```terminal
-$ ./ProCon a1 a2 a3 a4 a5 b
+$ ./fib n
 ```
-where:
-* a1 is the time main thread sleep
-* a2 is the time producer sleep
-* a3 is the time consumer sleep
-* a4 is the producer number of threads
-* a5 is the consumer number of threads
-* b is Yes or No to request print statistics when program ends
+> n is the total number of elements in the sequence
 
 ## Producer-Consumer
 Using semaphore for solving Producer - Consumer problem.
@@ -51,6 +45,23 @@ Include 4 files:
 2. buffer.h
 3. ProCon.cpp
 4. Makefile
+
+Use Makefile to compile:
+```terminal
+$ make
+```
+
+To run:
+```terminal
+$ ./ProCon a1 a2 a3 a4 a5 b
+```
+where:
+* a1 is the time main thread sleep
+* a2 is the time producer sleep
+* a3 is the time consumer sleep
+* a4 is the producer number of threads
+* a5 is the consumer number of threads
+* b is Yes or No to request print statistics when program ends
 
 ## Banker
 The banker algorithm is implemented using 2 different languages python and cpp. 
@@ -81,5 +92,5 @@ $ python3 bankerpy.py infile.txt
 ```
 
 # Note
-Please use them as a reference only.
+*Please use them as a reference only.*
 ### end
